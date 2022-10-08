@@ -32,7 +32,6 @@ class Main {
         myMethod(multiply, divide);
 
         // Runnable example
-
         Runnable runnable = () -> System.out.println("hello I am runnable");
         runnable.run();
     }

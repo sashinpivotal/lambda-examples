@@ -1,4 +1,4 @@
-package predicate;
+package functional_interface.refactored;
 
 public class Fruit {
     private String name;

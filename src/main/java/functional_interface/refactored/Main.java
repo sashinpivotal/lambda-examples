@@ -1,4 +1,4 @@
-package predicate;
+package functional_interface.refactored;
 
 import java.util.ArrayList;
 import java.util.Arrays;
