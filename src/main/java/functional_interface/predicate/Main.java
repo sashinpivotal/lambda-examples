@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
-public class Example1 {
+public class Main {
 
 	public static void main(String[] args) {
 

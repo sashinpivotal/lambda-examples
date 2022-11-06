@@ -1,6 +1,6 @@
 package lambda;
 
-class Main {
+public class Main {
 
     public static void myMethod(Calculator m, Calculator d) {
         int product = m.calculate(30, 10);

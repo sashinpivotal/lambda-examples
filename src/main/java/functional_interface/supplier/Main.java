@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Supplier<String> supplier1 = () -> "adsf";
+		Supplier<String> supplier1 = () -> "Boston";
 		String result = supplier1.get();
 		System.out.println(result);
 		

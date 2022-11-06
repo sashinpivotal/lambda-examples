@@ -3,7 +3,7 @@ package functional_interface.function;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class Example1 {
+public class Main {
 
 	public static void main(String[] args) {
 
