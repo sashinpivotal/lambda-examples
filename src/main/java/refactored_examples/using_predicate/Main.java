@@ -1,4 +1,4 @@
-package functional_interface.refactored;
+package refactored_examples.using_predicate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,13 +11,15 @@ public class Main {
     public static void main(String[] args) {
 
         // Create test data
-        Person[] personArray = {new Person("Jong", 5),
+        Person[] personArray = {
+                new Person("Jong", 5),
                 new Person("Jon", 12),
                 new Person("Jon", 17),
                 new Person("Mary", 13)};
         List<Person> people = Arrays.asList(personArray);
 
-        Fruit[] fruitArray = {new Fruit("Apple", 11),
+        Fruit[] fruitArray = {
+                new Fruit("Apple", 11),
                 new Fruit("Orange", 22),
                 new Fruit("Banana", 33)};
         List<Fruit> fruits = Arrays.asList(fruitArray);
@@ -99,14 +101,7 @@ public class Main {
         return result;
     }
 
-    // Utility method to display list of items
-    public static <T> void displayResult(String prefix, List<T> results) {
-        System.out.print(prefix);
-        results.forEach((T item) -> System.out.print(item));
-        System.out.println();
-    }
-
-    // #2: Use predicate with specific type
+    // #2: Use Predicate with specific type
     public static List<Person> finePeople(List<Person> people,
                                           Predicate<Person> aPredicate) {
 
@@ -119,7 +114,7 @@ public class Main {
         return result;
     }
 
-    // #3: Use predicate with generic type
+    // #3: Use Predicate with generic type
     public static <T> List<T> find(List<T> myList, Predicate<T> aPredicate) {
 
         List<T> result = new ArrayList<T>();
@@ -129,6 +124,12 @@ public class Main {
             }
         }
         return result;
+    }
+
+    // Utility method to display list of items
+    public static <T> void displayResult(String prefix, List<T> results) {
+        System.out.print(prefix);
+        System.out.println(results);
     }
 
 }

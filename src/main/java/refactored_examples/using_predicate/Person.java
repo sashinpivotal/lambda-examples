@@ -1,4 +1,4 @@
-package functional_interface.refactored;
+package refactored_examples.using_predicate;
 
 public class Person {
   private String name;
